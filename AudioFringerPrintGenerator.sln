@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioFringerPrintGenerator", "AudioFringerPrintGenerator\AudioFringerPrintGenerator.csproj", "{006C091C-79BE-48A1-BA3F-76D6C23FA4DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{006C091C-79BE-48A1-BA3F-76D6C23FA4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006C091C-79BE-48A1-BA3F-76D6C23FA4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006C091C-79BE-48A1-BA3F-76D6C23FA4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006C091C-79BE-48A1-BA3F-76D6C23FA4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B904CBB-28E7-4C4C-8C5D-9B3DEB003034}
+	EndGlobalSection
+EndGlobal
