@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +34,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SoundTouch.Net, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SoundTouch.Net.1.9.2.2\lib\net40\SoundTouch.Net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,7 +60,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AudioNormalizer.cs" />
     <Compile Include="AudioSamples.cs" />
+    <Compile Include="BassService.cs" />
+    <Compile Include="FFTWFNativeMethods.cs" />
+    <Compile Include="FFTWService.cs" />
+    <Compile Include="FFTWService64.cs" />
+    <Compile Include="FFTWService86.cs" />
+    <Compile Include="InteropFFTWDirection.cs" />
+    <Compile Include="InteropFFTWFlags.cs" />
+    <Compile Include="InteropFFTWKind.cs" />
+    <Compile Include="LowpassFilters.cs" />
+    <Compile Include="Lz4.cs" />
+    <Compile Include="Lz4Mode.cs" />
+    <Compile Include="MMHashtable.cs" />
+    <Compile Include="SimilarityUtility.cs" />
     <Compile Include="SpectrogramConfig.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +110,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
