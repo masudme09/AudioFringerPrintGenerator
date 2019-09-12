@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Un4seen.Bass;
+using Un4seen.Bass.AddOn.Mix;
 
 namespace AudioFringerPrintGenerator
 {
